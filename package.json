@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Vue 3 命令式弹窗工具库 — 类型安全、上下文继承、懒加载支持",
   "type": "module",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "main": "./dist/modalkit.cjs",
   "module": "./dist/modalkit.js",
   "types": "./dist/index.d.ts",

@@ -1,0 +1,63 @@
+{
+  "name": "modalkit",
+  "version": "0.1.0",
+  "description": "Vue 3 命令式弹窗工具库 — 类型安全、上下文继承、懒加载支持",
+  "type": "module",
+  "main": "./dist/modalkit.cjs",
+  "module": "./dist/modalkit.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/modalkit.js",
+      "require": "./dist/modalkit.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build:lib": "vite build",
+    "build:types": "vue-tsc -p tsconfig.build.json",
+    "build": "run-s build:lib build:types",
+    "preview": "vite preview",
+    "type-check": "vue-tsc --build",
+    "format": "prettier --write --experimental-cli src/"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "modal",
+    "dialog",
+    "imperative",
+    "composable",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "peerDependencies": {
+    "vue": ">=3.3.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.4",
+    "@types/node": "^24.12.0",
+    "@vitejs/plugin-vue": "^6.0.4",
+    "@vue/tsconfig": "^0.9.0",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "3.8.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-vue-devtools": "^8.0.7",
+    "vue": "^3.5.30",
+    "vue-tsc": "^3.2.5"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}

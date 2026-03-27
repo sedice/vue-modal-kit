@@ -1,5 +1,5 @@
 {
-  "name": "modalkit",
+  "name": "vue-modalkit",
   "version": "0.1.0",
   "description": "Vue 3 命令式弹窗工具库 — 类型安全、上下文继承、懒加载支持",
   "type": "module",
